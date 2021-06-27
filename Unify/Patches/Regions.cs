@@ -17,14 +17,9 @@ namespace Unify.Patches
 
         internal static IRegionInfo[] NewRegions { get; } = new IRegionInfo[]
         {
-            new DnsRegionInfo("192.241.154.115", "skeld.net", StringNames.NoTranslation, "192.241.154.115", 22023)
+            //Modif for Challenger Server 2021.5.25s version.
+            new DnsRegionInfo("51.210.123.16", "Challenger", StringNames.NoTranslation, "51.210.123.16", 22023)
                 .Cast<IRegionInfo>(),
-            new DnsRegionInfo("localhost", "localhost", StringNames.NoTranslation, "127.0.0.1", 22023)
-                .Cast<IRegionInfo>(),
-            new DnsRegionInfo("152.228.160.91", "matux.fr", StringNames.NoTranslation, "152.228.160.91", 22023)
-                .Cast<IRegionInfo>(),
-            new DnsRegionInfo("77.55.217.159", "Przebot", StringNames.NoTranslation, "77.55.217.159", 22023)
-                .Cast<IRegionInfo>()
         };
 
         internal static List<IRegionInfo> ModRegions { get; } = new List<IRegionInfo>();
